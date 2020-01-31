@@ -1,5 +1,4 @@
 server '54.238.210.221', user: 'ec2-user', roles: %w{app db web}
-config.require_master_key = true
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -9,6 +8,7 @@ config.require_master_key = true
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
+config.require_master_key = true
 
 
 # role-based syntax
